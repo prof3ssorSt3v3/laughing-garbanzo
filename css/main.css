@@ -10,12 +10,43 @@ body {
   padding: 0;
   margin: 0;
 }
-header {
+header,
+main {
   margin: 0;
   padding: 1rem 2rem;
 }
+header {
+  background-color: hsl(290, 40%, 20%);
+  padding-block: 2rem;
+}
 h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   line-height: 1;
-  font-weight: 300;
+  padding: 0;
+  margin: 0;
+  font-weight: 100;
+  color: hsla(290, 0%, 100%, 0.8);
+}
+h2 {
+  font-size: 3rem;
+  cursor: pointer;
+  line-height: 1;
+  font-weight: 100;
+  color: hsl(290, 40%, 20%);
+}
+h3 {
+  font-size: 2rem;
+  color: hsl(290, 40%, 20%);
+}
+p {
+  font-size: 1rem;
+  color: hsl(290, 10%, 50%);
+}
+#datalist li {
+  list-style: none;
+  border: 1px solid #333;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-block: 1rem;
+  width: clamp(22ch, 80%, 50ch);
 }
