@@ -3,14 +3,12 @@ const cacheName = `YourNameHere-${version}`;
 const staticFiles = [];
 
 self.addEventListener('install', (ev) => {
-  caches.open(cacheName).then((cache) => {
     //if you have an array of files then addAll() here
     ev.waitUntil(
       caches.open(cacheName).then((cache) => {
         cache.addAll(staticFiles);
       })
     );
-  });
 });
 self.addEventListener('activate', (ev) => {
   //delete old version
